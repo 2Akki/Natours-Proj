@@ -1,0 +1,25 @@
+{
+  "name": "starter",
+  "version": "1.0.0",
+  "description": "landing page for this prj",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "compile:sass": "node-sass sass/main.scss css/style.com.css",
+    "concat:css": "concat -o css/style.concat.css css/lineastyles.css css/style.com.css",
+    " ": "postcss --use autoprefixer -b 'last 10 versions' css/style.concat.css -o css/style.prefix.css",
+    "buld:css":"npm-run-all compile:sass concat:css",
+    "prefix:not-work":"prefix does not work"
+    
+
+  },
+  "author": "Akki Sharma",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^7.1.4",
+    "concat": "^1.0.3",
+    "node-sass": "^7.0.1",
+    "postcss-cli": "^4.1.1"
+  },
+  "dependencies": {}
+}
